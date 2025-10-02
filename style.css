@@ -11,3 +11,90 @@ final
 /*
 find value about like absolute or smth idk
 */
+
+
+section {
+    display:flex;
+}
+
+img{
+    height:200px;
+}
+
+#meetings{
+    
+}
+
+section#meetings img{
+    float:right;    
+}
+
+section#workshops img{
+    float:left;
+}
+
+section#hackathons img{
+    float:right;
+}
+
+#general-info{
+    margin-left:3vw;
+    margin-right:3vw;
+}
+
+#about {
+    font-size:xx-large;
+    margin:100px;
+}
+
+.main-button {
+
+    background:red;
+    float:right;
+    
+    font-size: 3vw;
+    border-radius: 10px;
+    font-family: 'helvetica';
+    text-align: center;
+    margin-right: 20vh;
+    margin-top:2vw;
+    width:40vh;
+    padding:10px;
+
+
+}
+  
+#meet-info{
+    background-color: red;
+    border-radius:10px;
+    font-family: "helvetica";
+    font-size: 2vw;
+}
+
+
+#title{
+    float:left;
+    padding-left:10vw;
+    font-size: 10vw;
+    font-family:"Georgia";
+    margin-top:1vh;
+    text-align: center;
+}
+
+#beginning{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+#leader-area{
+
+    display:flex;
+    justify-content: space-between;
+
+}
+#final{
+    display:flex;
+    justify-content: space-between;
+
+}
