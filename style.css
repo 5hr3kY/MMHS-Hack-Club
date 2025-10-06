@@ -1,45 +1,47 @@
-/* button-area
-meet-info
-main-button
-about
-general-info
-leader-area
-final
-*/
 
 
-/*
-find value about like absolute or smth idk
-*/
-
-
-section {
-    display:flex;
+#title-leader{
+    text-align: center;
+    font-size: 8vw;;
 }
-
 img{
-    height:200px;
+    height:15vw;
+    width:auto;
 }
 
-#meetings{
-    
+
+
+#meetings,#hackathons,#workshops{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:5em;
+
 }
 
-section#meetings img{
-    float:right;    
+#general-info div h3{
+    text-align: center;
 }
 
-section#workshops img{
-    float:left;
-}
-
-section#hackathons img{
+#workshops p,#meetings img, #hackathons img{
     float:right;
+    margin-left:30px;
 }
+
+
+#general-info h3{
+    font-size:5vw;
+}
+
+#general-info p{
+    font-size:2vw;
+
+}
+
 
 #general-info{
-    margin-left:3vw;
-    margin-right:3vw;
+    margin-left:5vw;
+    margin-right:5vw;
 }
 
 #about {
@@ -47,54 +49,99 @@ section#hackathons img{
     margin:100px;
 }
 
-.main-button {
-
-    background:red;
-    float:right;
-    
-    font-size: 3vw;
-    border-radius: 10px;
-    font-family: 'helvetica';
-    text-align: center;
-    margin-right: 20vh;
-    margin-top:2vw;
-    width:40vh;
-    padding:10px;
-
-
-}
-  
-#meet-info{
-    background-color: red;
-    border-radius:10px;
-    font-family: "helvetica";
-    font-size: 2vw;
-}
-
 
 #title{
     float:left;
     padding-left:10vw;
-    font-size: 10vw;
+    font-size: 12vw;
     font-family:"Georgia";
     margin-top:1vh;
     text-align: center;
 }
 
-#beginning{
-    display:flex;
-    justify-content: space-between;
 
-}
 
 #leader-area{
 
     display:flex;
     justify-content: space-between;
+}
+
+
+#leader-area section{
+    margin:1vw;
+    text-align: center;
 
 }
-#final{
-    display:flex;
+
+#final section{
+   
+
+    display: flex;
     justify-content: space-between;
+    text-align:center;
+}
+
+#final section div{
+    width:20%;
+
+}
+form{
+    align-self:center;
+    
+}
+
+#final h4{
+    font-size:3vw;
+}
+
+html{
+    overflow-x: hidden;
+    margin:3vw;
+}
+
+h2{
+    text-align: center;
+}
+
+#remind{
+
+    border-radius:9px;
+}
+
+
+.main-button:hover,
+.main-button:active{
+  background-color: white;
+  color: #FF4742;
+}
+
+.main-button {
+
+    margin:2vw;
+    width:30vw;
+    height:4em;
+
+
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 3vw;
+
+    line-height:4em;
+    text-align: center;
+    float:right;
+    text-decoration: none;
+
+
+}
+
+
+#beginning{
+    display:flex;
 
 }
