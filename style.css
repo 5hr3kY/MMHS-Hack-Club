@@ -1,26 +1,119 @@
-
-
-#title-leader{
-    text-align: center;
-    font-size: 8vw;;
+#all {
+   display:flex;
+    justify-content: space-between;
 }
+#second{
+    margin-right:1em;
+    width:45%;
+}
+
+#meet{
+    width:45%;
+    font-size: 500%;
+    margin-left:1em;
+
+    text-align: center;
+    color:black;
+
+}
+
+.main-side{
+    text-align: left;
+}
+
+.other-side{
+    text-align: right;
+}
+
+#meet section{
+    display:flex;
+    justify-content: space-between;
+}
+
+#return{
+    background-color: rgba(9,9,9,0.5);
+    padding-bottom:100px;
+    padding-right: 100%;
+    font-size:50px;
+    position:fixed;
+}
+
+#return a{
+    text-decoration: none;
+    color:white;
+    position:absolute;
+    left:5vw;
+    top:2vh;
+    transition: all 1s;
+
+
+}
+#return a:hover{
+    transition:all 0.5s;
+    font-size:70px;
+}
+
+#question{
+    text-align: center;
+    color:black;
+    font-size: 100px;
+    margin-top:150px;
+}
+
+#final{
+    margin:0px;
+    padding:40px;
+    background:rgba(1,1,1,0.8);
+    color:rgb(240, 230, 230);
+}
+
+#times{
+    margin-top:150px;
+    font-size:100px;
+    
+}
+ #final{
+    font-weight:1000;
+ }
+
+ #final img{
+    transition:transform 1s ease;
+ }
+ #final img:hover, #final image:active{
+    transition:all 1s;
+    transform:scale(1.15);
+    position: relative;
+
+ }
+
 img{
-    height:15vw;
+    height:10vw;
     width:auto;
 }
 
+.people{
+    border-radius:1000px;
+    transition: all 0.5s;
+}
+
+.people:hover{
+    transform:scale(1.1)
+}
+
+.genimg{
+    height:25vw;
+    width:auto;
+}
 
 
 #meetings,#hackathons,#workshops{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom:5em;
 
 }
-
-#general-info div h3{
-    text-align: center;
+#workshops h3{
+    text-align: right;
 }
 
 #workshops p,#meetings img, #hackathons img{
@@ -42,19 +135,40 @@ img{
 #general-info{
     margin-left:5vw;
     margin-right:5vw;
+    padding:5em;
+
+    
+
 }
+
+#general-info h3{
+    text-decoration: underline;
+}
+
+#general-info div{
+    transition:all 1s;
+
+}
+
+#general-info div:hover{
+    background:rgba(250, 199, 199,0.6);
+    border-radius: 90px;
+    transform:scale(1.1)
+}
+
 
 #about {
     font-size:xx-large;
     margin:100px;
+    padding:90px;
+
 }
 
 
 #title{
     float:left;
     padding-left:10vw;
-    font-size: 12vw;
-    font-family:"Georgia";
+    font-size: 10vw;
     margin-top:1vh;
     text-align: center;
 }
@@ -64,13 +178,17 @@ img{
 #leader-area{
 
     display:flex;
-    justify-content: space-between;
+    justify-content:center;
+    margin:0 auto;
+    width:90%;
+
 }
 
 
 #leader-area section{
     margin:1vw;
     text-align: center;
+    max-width: 20%;
 
 }
 
@@ -83,7 +201,7 @@ img{
 }
 
 #final section div{
-    width:20%;
+    width:45%;
 
 }
 form{
@@ -95,25 +213,29 @@ form{
     font-size:3vw;
 }
 
-html{
+html,body{
     overflow-x: hidden;
-    margin:3vw;
+    margin:0px;
+    padding:0px;
+    background:#e1ffe4;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    color:white;
 }
 
-h2{
+
+#end{
+    font-size: 100px;
+    margin-bottom:0px;
+    padding-top:0.5em;
     text-align: center;
+    color:white;
+    background:rgba(0, 0, 0, 0.69);
 }
+
 
 #remind{
 
     border-radius:9px;
-}
-
-
-.main-button:hover,
-.main-button:active{
-  background-color: white;
-  color: #FF4742;
 }
 
 .main-button {
@@ -129,19 +251,66 @@ h2{
     box-shadow: rgba(0, 0, 0, 0.1) 2px 4px 8px;
     color: #FFFFFF;
     cursor: pointer;
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
     font-size: 3vw;
 
     line-height:4em;
     text-align: center;
-    float:right;
+    transition: all 0.5s;
     text-decoration: none;
-
-
 }
 
+.left{
+    float:right;
+    margin-right:5vw;
+}
+.centered{
+
+    padding:1% 4% 1% 4%;
+}
+.main-button:hover
+{
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+
+  transform:scale(1.1)
+}
+
+.main-button:active {
+  opacity: .6;
+  transition: all 0.3s;
+  transform: scale(.97);
+}
 
 #beginning{
     display:flex;
 
 }
+
+
+#logo{
+    position:absolute;
+}
+
+body{
+
+    background:
+    radial-gradient(204.75px at calc(100% + 180px) 50%,#ffffff00 calc(99% - 7px),#ffffff calc(101% - 7px) 99%,#ffffff00 101%) calc(50% - 48.5px + .5px) calc(50% - 180px)/ 97px 360px  ,
+    radial-gradient(204.75px at -180px 50%,#0000 calc(99% - 7px),#ffffff calc(101% - 7px) 99%,#ffffff00 101%) calc(50% + 48.5px) 50%/97px 360px  ;
+}
+
+
+#title-leader{
+    padding:30px;
+    margin: 2vh auto;
+    border-radius:90px;
+    font-size: 8vw;
+    width:30%;
+}
+
+#title-leader, #leader-area, #general-info,#about{
+    background:rgba(196, 196, 196, 0.65);
+    border-radius: 90px;
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 5px 99px;
+
+    }
