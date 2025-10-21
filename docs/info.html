@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Meet Info</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link rel = "icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.-2IUl_Jt-2JbQaaSMJpu6QHaHa%3Fpid%3DApi&f=1&ipt=91dc634b7590fc51e6d3fa42f5a3416a6fb065c131264e64cab60b6e91f1ef7b&ipo=images ">
+ 
+    </head>
+
+    <body>
+        <div id ="return"><a  href="index.html">return</a></div>
+
+        <div id = "all">
+
+            <div id = "meet">
+                <h1>Lunch Meets</h1>
+
+                <section ><p class = "main-side">Location:</p><p class = "other-side">Room 106D</p></section>
+                <section><p class = "main-side">Time:</p><p class = "other-side">Thursdays at Lunch</p></section>
+            </div>
+
+           <div id = "second"> 
+            <h1 >Sounds Interesting?</h1>
+            <div id = "final">
+                <section>
+                    <div>
+                        <h2>Sign up here!</h2>
+                        <p>add your school email!</p>
+                        <form id="sheetForm">
+                        <input type="email" name="email" required>
+                        <input type="submit" value="Submit">
+                        </form>
+                    </div>
+
+                    <div>
+                        <h2>Slack</h2>
+                        <p> Join the slack to talk to highschool programmers around the world!
+                    You need to create an account to be elgible of prizes.</p>
+                        <a href = "https://hackclub.com/slack/"><img src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd5%2FSlack_icon_2019.svg%2F2048px-Slack_icon_2019.svg.png&f=1&nofb=1&ipt=2434a55d768ad117b8739807479abac99ac811d932d5b30e08ee2e4837127b5f" height = 150></a>
+    
+                    </div>
+                </section>
+
+                <section>
+                    <div>
+                        <h2>Remind</h2>
+                        <p>Join our Remind to get weekly notifications on upcoming events and notices!</p>
+                        <a  href = "https://www.remind.com/join/mmhshk"><img id = "remind" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.6nBxRPgw9FiAtiItXMrFeQHaHa%3Fpid%3DApi&f=1&ipt=f96d5f6861f10933e3d5b7929732c2f11843c5f5bc36f40ef9357b691c5383a5&ipo=images" height =150></a>
+                    </div>
+                    
+                    <div>
+                        <h2>Instagram</h2>
+                        <p>Follow our insta to see what we have done so far!</p>
+                        <a href = "https://www.instagram.com/__mmhs.hackclub__/"><img src = "https://duckduckgo.com/i/e35ea266e46991dc.png" height = 150></a>
+                    </div>
+            </section>
+        </div>
+    </body>
+    <script>
+    const scriptURL ='https://script.google.com/macros/s/AKfycbxiY-5wxEo1Ou7OkmCOL20gAX0vyQnahmpK5_8xMujKM9cWx92S6UQS9nWz7WhZLzkzuA/execE';
+    const form = document.getElementById('sheetForm');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify({
+
+            email: form.email.value
+
+        })
+        })
+        .then(() => alert('Submitted!'))
+        .catch(err => alert('Error: ' + err.message));
+    });
+    </script>
+</html>
+
