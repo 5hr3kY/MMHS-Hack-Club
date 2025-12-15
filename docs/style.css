@@ -201,7 +201,7 @@ img{
 #leader-area section{
     margin:1vw;
     text-align: center;
-    max-width: 20%;
+    max-width: 15%;
 
 }
 
@@ -311,6 +311,7 @@ body{
     radial-gradient(204.75px at calc(100% + 180px) 50%,#ffffff00 calc(99% - 7px),#ffffff calc(101% - 7px) 99%,#ffffff00 101%) calc(50% - 48.5px + .5px) calc(50% - 180px)/ 97px 360px  ,
     radial-gradient(204.75px at -180px 50%,#0000 calc(99% - 7px),#ffffff calc(101% - 7px) 99%,#ffffff00 101%) calc(50% + 48.5px) 50%/97px 360px  ;
 }
+
 
 
 #title-leader{
